@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person"
+        />
+
+    <item
+        android:id="@+id/calc"
+        android:title="Calories"
+        android:icon="@drawable/ic_calculate"/>
+
+    <item
+        android:id="@+id/Exercises"
+        android:title="Exercises"
+        android:icon="@drawable/ic_fitness"/>
+
+
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/darkPurple"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
+        <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp" android:layout_marginEnd="44dp" android:layout_marginBottom="11dp" android:gravity="center" android:text=" Calculate the calories " android:textColor="#362360" android:textSize="30dp" app:layout_constraintBottom_toTopOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="44dp" android:text=" we will need to know : " android:textColor="#362360" android:textSize="30dp" app:layout_constraintBottom_toTopOf="@+id/agedtxt" app:layout_constraintEnd_toEndOf="@+id/textView2" app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+        <EditText android:id="@+id/hiedtxt" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginStart="63dp" android:layout_marginEnd="63dp" android:layout_marginBottom="20dp" android:background="@drawable/custm_input" android:ems="10" android:hint="Hight:" android:inputType="number" app:layout_constraintBottom_toTopOf="@+id/witedtxt" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/agedtxt"/>
+        <EditText android:id="@+id/witedtxt" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginStart="60dp" android:layout_marginEnd="60dp" android:layout_marginBottom="56dp" android:background="@drawable/custm_input" android:ems="10" android:hint="Weght:" android:inputType="number" app:layout_constraintBottom_toTopOf="@+id/rslt" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/hiedtxt"/>
+        <EditText android:id="@+id/agedtxt" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginBottom="12dp" android:background="@drawable/custm_input" android:ems="10" android:hint="Age:" android:inputType="number" app:layout_constraintBottom_toTopOf="@+id/hiedtxt" app:layout_constraintEnd_toEndOf="@+id/witedtxt" app:layout_constraintStart_toStartOf="@+id/hiedtxt" app:layout_constraintTop_toBottomOf="@+id/textView"/>
+        <Button android:id="@+id/calbtn" android:layout_width="250dp" android:layout_height="0dp" android:layout_marginBottom="122dp" android:background="@drawable/btnfile" android:text="calculate " android:textSize="25dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/rslt"/>
+        <TextView android:id="@+id/rslt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="73dp" android:layout_marginBottom="52dp" android:hint="result" android:textSize="25dp" app:layout_constraintBottom_toTopOf="@+id/calbtn" app:layout_constraintStart_toStartOf="@+id/calbtn" app:layout_constraintTop_toBottomOf="@+id/witedtxt"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

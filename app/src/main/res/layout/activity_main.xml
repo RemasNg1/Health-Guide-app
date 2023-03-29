@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/darkPurple"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="340dp"
+            android:layout_height="272dp"
+            android:layout_marginStart="25dp"
+            app:srcCompat="@drawable/splashimage" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Health Guide"
+            android:textColor="@color/darkPurple"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="260dp"
+            android:text="Welcome"
+            android:textColor="@color/purple"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="220dp"
+            />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="serif"
+            android:text="It is an app to help people improve their lives and organize their important health information and make it easy to access in one place."
+            android:textAlignment="center"
+            android:textColor="@color/darkPurple"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:textColor="@color/darkPurple"
+            android:fontFamily="serif"
+            android:textSize="20sp"
+            android:text="Whether you want to kick-start your fitness life or keep track of your vital health"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="540dp"
+            android:textColor="@color/purple"
+            android:fontFamily="serif"
+            android:text=" We're here to help"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>

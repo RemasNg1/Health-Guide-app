@@ -1,0 +1,53 @@
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#81CBC3D5"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-17dp"
+        android:layout_marginTop="-13dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/exersice_12"/>
+        <TextView
+            android:layout_width="392dp"
+            android:layout_height="469dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="2dp"
+            android:background="#F4F6F6"
+            android:text="@string/pose12"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"/>
+
+        <Button android:id="@+id/startbutton"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="#DACEE4"
+            android:text="Click here to START !"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+        <Button android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="#FFF"
+            android:text="01:00"
+            android:textColor="#89A7D5"
+            android:textSize="70dp"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
